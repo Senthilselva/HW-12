@@ -13,11 +13,12 @@ CREATE TABLE Products (
     -- Makes a string column called "departmentName" which cannot contain null --
     departmentName VARCHAR(30) NOT NULL,
 	-- Makes an numeric column called "price" --
-    price INTEGER(10,2),
+    price DECIMAL(10,2),
 	-- Makes an numeric column called "stockQuantity" --
-    stockQuantity INTEGER(10),
+    stockQuantity DECIMAL(10,2),
     -- Sets itemId as this table's primary key which means all data contained within it will be unique --
     PRIMARY KEY (itemId)
 
 );
+
 
