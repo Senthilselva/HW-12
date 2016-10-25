@@ -82,12 +82,34 @@ var updateProducts = function(id,count){
 			}], function(err1, res1) {
 				if (err1) throw err1;
 				console.log("Total Cost " + res[0].price*count);
+				doYouWantToContinue();
 			});
 		} else {
 			console.log("Insufficient quantity!");
+			doYouWantToContinue();
 		}
 	});//query
 }
 
 
+var doYouWantToContinue = function(){
+	inquirer.prompt({
+		name:"isContinue",
+	    type:"input",
+		message:"Enter Y or y if you want to continue:",
+		validate: function(value) {
+			if (value) {
+                return true;
+	        } else {
+			    return false;
+			}
+	    }
+	}).then(function(answer){
+		if(answer.isContinue == "Y" || answer.isContinue =="y"){
+			start();
+		} else{
+			return false;
+		}
+	});
+}
 
