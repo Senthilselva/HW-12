@@ -18,7 +18,7 @@ INSERT INTO Products (productName,departmentName,price,stockQuantity)
 VALUES ("Luck Women's LK Linnea Boot","Shoe",130.95,100);
 
 INSERT INTO Products (productName,departmentName,price,stockQuantity)
-VALUES ("Nine west Hardriel Leather Boot","Shoe",129.00,80);
+VALUES ("Nine west Leather Boot","Shoe",129.00,80);
 
 INSERT INTO Products (productName,departmentName,price,stockQuantity)
 VALUES ("Black Tea","Grocery",9.98,90);
@@ -28,3 +28,18 @@ VALUES ("Herbal Tea","Grocery",10.50,75);
 
 INSERT INTO Products (productName,departmentName,price,stockQuantity)
 VALUES ("Matcha Starter Kit","Grocery",47.50,10);
+
+
+
+INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
+VALUES ("Grocery",10,0);
+
+INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
+VALUES ("Shoe",10,0);
+
+INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
+VALUES ("Television-Video",10,0);
+
+INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
+VALUES ("Books",10,0);
+

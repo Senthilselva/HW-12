@@ -75,6 +75,7 @@ var updateProducts = function(id,count){
 			//console.log("update");
 			var newStockQuantity = res[0].stockQuantity - count;
 			newStockQuantity = parseInt(newStockQuantity);
+			var depName = res[0].departmentName;
 			connection.query("UPDATE Products SET ? WHERE ?", [{
     			stockQuantity : newStockQuantity
 			},{
@@ -82,7 +83,7 @@ var updateProducts = function(id,count){
 			}], function(err1, res1) {
 				if (err1) throw err1;
 				console.log("Total Cost " + res[0].price*count);
-				doYouWantToContinue();
+				updateDepartment(res[0].departmentName, res[0].price*count);
 			});
 		} else {
 			console.log("Insufficient quantity!");
@@ -113,3 +114,27 @@ var doYouWantToContinue = function(){
 	});
 }
 
+
+var updateDepartment = function(depName,count){
+	var query = 'SELECT * FROM Departments where departmentName = ?'
+	connection.query(query, [depName], function(err, res) {
+		if(err) throw err;
+		var newTotalSales = parseFloat(res[0].totalSales) + parseFloat(count);
+		console.log("Total Sale  :" + newTotalSales  + "   Department Name: "+ depName);
+
+		var queryUpdate = "UPDATE Departments SET ? WHERE ?";
+		connection.query(queryUpdate, [{
+			totalSales : newTotalSales
+		},{
+			departmentName : depName
+		}],function(err,res){
+			if(err) throw err;
+			
+			doYouWantToContinue();
+
+		});
+
+		
+	});
+
+}
