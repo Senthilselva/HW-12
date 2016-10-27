@@ -120,7 +120,7 @@ var updateDepartment = function(depName,count){
 	connection.query(query, [depName], function(err, res) {
 		if(err) throw err;
 		var newTotalSales = parseFloat(res[0].totalSales) + parseFloat(count);
-		console.log("Total Sale  :" + newTotalSales  + "   Department Name: "+ depName);
+		//console.log("Total Sale  :" + newTotalSales  + "   Department Name: "+ depName);
 
 		var queryUpdate = "UPDATE Departments SET ? WHERE ?";
 		connection.query(queryUpdate, [{

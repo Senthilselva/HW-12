@@ -26,7 +26,7 @@ var start = function() {
 				"Add New Product" ],
 		message:"Select one of the following :"
 		}).then (function(answer) {
-			console.log(answer);
+			//console.log(answer);
 			switch (answer.choice){
 				case "View Products for Sale":
 					productsForSale();
@@ -121,7 +121,7 @@ var addToInventory = function(){
 }
 
 var updateInventory = function(id,count){
-	console.log("updateInventory");
+	//console.log("updateInventory");
 
 	var query = 'SELECT * FROM Products where itemId = ?'
 	connection.query(query, [id], function(err, res) {
@@ -136,7 +136,7 @@ var updateInventory = function(id,count){
 				itemId : id
 			}], function(err1, res1) {
 				if (err1) throw err1;
-				console.log(res);
+				//console.log(res);
 				doYouWantToContinue();
 			});//Update Query
 
@@ -166,7 +166,7 @@ var doYouWantToContinue = function(){
 
 
 var addNewProduct =function(){
-	console.log("addNewProduct");
+	//console.log("addNewProduct");
 	//Get all the Value
 	inquirer.prompt([{
 		name: "newProductName",
