@@ -5,8 +5,8 @@
 Creating  the database
 
 Used files
-1 . schema.sql
-2 . seed.sql
+* schema.sql
+* seed.sql
 
 *The following tables were created*
 
@@ -30,17 +30,29 @@ Used files
 
 ## The second Challenge - Manager
 
-### When you run node BamazonManager.js
+#### When you run node BamazonManager.js
 
-### The initial page looks like
+#### The initial page looks like
 
 ![screen shot](./Manager_initizal.png)
 
-###When you make the first selection
+#### When you select the first option - View Products
 
 ![screen shot](./View_Products_sale.png)
 
+#### When you select the second option - Low Inventry(<50)
 
+![screen shot](./Low_Inventory.png)
 
+#### When you select the third,fourth option - Add to Inventry and add new product
 
+![screen shot](./Manager_add_to_inventory_new_product.png)
+
+#### The changes can be seen in the table
+* Item increased in #6
+* New item added in #11 
+
+![Table](./Inventory_product_added.png)
+
+##The third challenge 
 
