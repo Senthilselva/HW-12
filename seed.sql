@@ -35,11 +35,11 @@ INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
 VALUES ("Grocery",10,0);
 
 INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
-VALUES ("Shoe",10,0);
+VALUES ("Shoe",20,0);
 
 INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
-VALUES ("Television-Video",10,0);
+VALUES ("Television-Video",200,0);
 
 INSERT INTO Departments (departmentName, overHeadCosts, totalSales)
-VALUES ("Books",10,0);
+VALUES ("Books",5,0);
 

@@ -47,7 +47,7 @@ var start = function() {
 
 
 var productsForSale = function(){
-	console.log("productsForSale");
+	//console.log("productsForSale");
 	connection.query('SELECT * FROM Products', function(err, res) {
     	//console.log(res);
     	var table=[];
@@ -66,7 +66,7 @@ var productsForSale = function(){
 
 
 var lowInventory = function(){
-	console.log("lowInventory");
+	//console.log("lowInventory");
 	connection.query('SELECT * FROM Products where stockQuantity < 50', function(err, res) {
     	//console.log(res);
     	var table=[];
@@ -85,7 +85,7 @@ var lowInventory = function(){
 
 
 var addToInventory = function(){
-	console.log("addToInventory");
+	//console.log("addToInventory");
 	connection.query('SELECT * FROM Products', function(err, res) {
 		var table = [];
 		for(var i=0; i < res.length; i++){
@@ -129,7 +129,7 @@ var updateInventory = function(id,count){
 		var newStockQuantity = parseInt(res[0].stockQuantity) + parseInt(count);
 		//newStockQuantity = parseInt(newStockQuantity);
 		//id = id.parseInt();
-		console.log("id "+ id + "newStockQuantity  "+ newStockQuantity )
+		//console.log("id "+ id + "newStockQuantity  "+ newStockQuantity )
 			connection.query("UPDATE Products SET ? WHERE ?", [{
 		    	stockQuantity : newStockQuantity
 			},{
