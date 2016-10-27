@@ -10,7 +10,7 @@ Used files
 
 *The following tables were created*
 
-![Select statements of Products and Departments](https://github.com/Senthilselva/HW-12/Created_tables.png)
+![Select statements of Products and Departments](./Created_tables.png)
 
 
 ### The First Challenge - Customer
