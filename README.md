@@ -52,7 +52,15 @@ Used files
 * Item increased in #6
 * New item added in #11 
 
-![Table](./Inventory_product_added.png)
+![table](./Inventory_product_added.png)
 
-##The third challenge 
+##The third challenge Bamazon Executive
+
+*There are two option both are shown below
+
+![Screen shot for Executive](./BamazonExecutive.png)
+
+*The department table after it is added 
+![table](./department_added.png)
+
 
