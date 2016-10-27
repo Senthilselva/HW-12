@@ -22,3 +22,9 @@
 ### Then you can make selection
 ![screen shot of running BamazonCustomer.js](./Customerjs.png)
 
+###The changes can be seen in both Products and Departments table
+
+![tables after customer.js is run](./Table_after_customerjs.png)
+
+
+
