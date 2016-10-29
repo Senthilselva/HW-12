@@ -22,3 +22,19 @@ CREATE TABLE Products (
 );
 
 
+CREATE TABLE Departments (
+    -- Creates a numeric column called "itemId" which will automatically increment its default value as we create new rows --
+    departmentId INTEGER(11) AUTO_INCREMENT NOT NULL,
+    -- Makes a string column called "productName" which cannot contain null --
+    departmentName VARCHAR(30) NOT NULL,
+    -- Makes a string column called "departmentName" which cannot contain null --
+    overHeadCosts DECIMAL(10,2),
+    -- Makes an numeric column called "price" --
+    totalSales DECIMAL(10,2),
+    -- Makes an numeric column called "stockQuantity" --
+    PRIMARY KEY (departmentId)
+
+);
+
+
+
